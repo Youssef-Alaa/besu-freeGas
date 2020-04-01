@@ -23,5 +23,5 @@ rm -rf /opt/besu/database
 p2pip=`awk 'END{print $1}' /etc/hosts`
 
 # run bootnode with discovery but no bootnodes as it's our bootnode.
-/opt/besu/bin/besu $@ --bootnodes --p2p-host=$p2pip
+/opt/besu/bin/besu $@ --bootnodes --min-gas-price=0 --p2p-host=$p2pip
 

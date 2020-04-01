@@ -29,5 +29,5 @@ bootnode_enode_address="enode://${bootnode_pubkey}@${boonode_ip}:${BOOTNODE_P2P_
 
 p2pip=`awk 'END{print $1}' /etc/hosts`
 
-/opt/besu/bin/besu $@ --bootnodes=$bootnode_enode_address --p2p-host=$p2pip
+/opt/besu/bin/besu $@ --bootnodes=$bootnode_enode_address --min-gas-price=0 --p2p-host=$p2pip
 
