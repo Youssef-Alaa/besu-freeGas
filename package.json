@@ -1,0 +1,27 @@
+{
+  "name": "beso-reloader",
+  "version": "1.0.0",
+  "description": "reload beso node every certain time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"...\"",
+    "postinstall": "pm2 start index.js --name beso-reloader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http"
+  },
+  "keywords": [
+    "reload",
+    "beso-node"
+  ],
+  "author": "eng.abdul.azeem@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "node-cron": "^2.0.3",
+    "npmlog": "^4.1.2",
+    "pm2": "^4.2.3",
+    "shelljs": "^0.8.3"
+  }
+}
